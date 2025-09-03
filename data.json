@@ -8,5 +8,15 @@
     "file": "experiments/example1.js",
     "name": "Example 1",
     "description": "Description for example 1"
+  },
+  {
+    "file": "experiments/example2.js",
+    "name": "Example 2",
+    "description": "Description for example 1"
+  },
+  {
+    "file": "experiments/example3.js",
+    "name": "Example 3",
+    "description": "Description for example 1"
   }
 ]
