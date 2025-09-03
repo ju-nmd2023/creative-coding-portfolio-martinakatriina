@@ -1,35 +1,52 @@
 function setup() {
   createCanvas(innerWidth, innerHeight);
-  background(34, 39, 46);
+}
+
+const size = 100;
+const layers = 10;
+
+function getRandomValue(pos, variance) {
+  return pos + random(-variance, variance);
+}
+
+function drawLayers(x, y, size, layers) {
+  const variance = size / 20;
+
+  noFill();
+  for (let i = 0; i < layers; i++) {
+    const s = (size / layers) * i;
+    const half = s / 2;
+    //  rectMode(CENTER);
+    // rect(x - half, y - half, s, s);
+
+    beginShape();
+    vertex(
+      getRandomValue(x - half, variance),
+      getRandomValue(y - half, variance)
+    );
+    vertex(
+      getRandomValue(x + half, variance),
+      getRandomValue(y - half, variance)
+    );
+    vertex(
+      getRandomValue(x + half, variance),
+      getRandomValue(y + half, variance)
+    );
+    vertex(
+      getRandomValue(x - half, variance),
+      getRandomValue(y + half, variance)
+    );
+    endShape(CLOSE);
+  }
 }
 
 function draw() {
-  background(34, 39, 46, 40);
-  noStroke();
-  fill(108, 182, 255);
+  background(190, 250, 210);
 
-  push();
-  translate(width / 2, height / 2);
-
-  push();
-  rotate(frameCount / 8);
-  ellipse(25, 0, 50);
-  pop();
-
-  push();
-  rotate(-frameCount / 10);
-  ellipse(75, 0, 50);
-  pop();
-
-  push();
-  rotate(frameCount / 12);
-  ellipse(125, 0, 50);
-  pop();
-
-  push();
-  rotate(-frameCount / 14);
-  ellipse(175, 0, 50);
-  pop();
-
-  pop();
+  for (let y = 0; y < 10; y++) {
+    for (x = 0; x < 10; x++) {
+      drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
+    }
+  }
+  noLoop();
 }
