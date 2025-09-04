@@ -9,18 +9,18 @@ let gap = 80;
 
 function flower() {
   noStroke();
-  let petals = 10;
+  let petals = 14;
 
   for (let y = 0; y < petals; y++) {
     for (let x = 0; x < petals; x++) {
       fill(200, 20, 80);
-      rect(x, y, 40, 1);
+      rect(x, y, 40, 1, 200);
 
-      fill(14, 24, 100);
-      rect(x, y, 20, 15);
+      fill(14, random(20, 200), 100);
+      rect(x, y, 20, 15, 50);
 
-      fill(100, 140, 20);
-      ellipse(x, y, 20);
+      fill(100, 190, 20);
+      ellipse(x, y, 10);
 
       rotate(PI / 5);
     }
