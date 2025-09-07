@@ -4,7 +4,7 @@ function setup() {
 }
 
 let flowerSize = 20;
-let amount = 5;
+let amount = 8;
 let gap = 80;
 
 function flower() {
@@ -40,4 +40,5 @@ function draw() {
     }
     y += flowerSize + gap;
   }
+  noLoop();
 }

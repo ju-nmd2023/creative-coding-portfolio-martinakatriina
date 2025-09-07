@@ -2,8 +2,9 @@ function setup() {
   createCanvas(innerWidth, innerHeight);
 }
 
-const size = 100;
+const size = 60;
 const layers = 10;
+let gap = 20;
 
 function getRandomValue(pos, variance) {
   return pos + random(-variance, variance);
@@ -11,6 +12,7 @@ function getRandomValue(pos, variance) {
 
 function drawLayers(x, y, size, layers) {
   const variance = size / 20;
+  stroke(202, 209, 131);
 
   noFill();
   for (let i = 0; i < layers; i++) {
@@ -41,11 +43,16 @@ function drawLayers(x, y, size, layers) {
 }
 
 function draw() {
-  background(190, 250, 210);
+  background(102, 2, 60);
 
   for (let y = 0; y < 10; y++) {
     for (x = 0; x < 10; x++) {
-      drawLayers(size / 2 + x * size, size / 2 + y * size, size, layers);
+      drawLayers(
+        size / 2 + x * (size + gap),
+        size / 2 + y * (size + gap),
+        size,
+        layers
+      );
     }
   }
   noLoop();
