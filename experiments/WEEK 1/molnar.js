@@ -14,10 +14,10 @@ function flower() {
   for (let y = 0; y < petals; y++) {
     for (let x = 0; x < petals; x++) {
       fill(200, 20, 80);
-      rect(x, y, 40, 1, 200);
+      rect(x, y, 40, 1, 100);
 
       fill(14, random(20, 200), 100);
-      rect(x, y, 20, 15, 50);
+      rect(x, y, 20, 15, 150);
 
       fill(100, 190, 20);
       ellipse(x, y, 10);

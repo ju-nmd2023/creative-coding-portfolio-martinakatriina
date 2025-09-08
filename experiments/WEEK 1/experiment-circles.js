@@ -1,5 +1,5 @@
 let circles = [];
-let numCircles = 50; // fewer circles to avoid clutter
+let numCircles = 100; // fewer circles to avoid clutter
 let colors = [];
 
 function setup() {
@@ -51,7 +51,7 @@ function setup() {
 }
 
 function draw() {
-  background(150, 155, 138); // black background
+  background(100, 20, 0, 0); // black background
 
   for (let c of circles) {
     let r = c.radius - c.spiralOffset;
