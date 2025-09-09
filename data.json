@@ -26,6 +26,6 @@
       "experiments/perlin-flow-field.js"
     ],
     "name": "Perlin Flow Field",
-    "description": "A visual experiment using p5 to create perlin noise paticles following vector flows"
+    "description": "A visual experiment to create perlin noise paticles following vector flows"
   }
 ]
