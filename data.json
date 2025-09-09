@@ -1,13 +1,18 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
+    "file": "experiments/week1/molnar.js",
+    "name": "Example 1 - Molnar recreation",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
   {
-    "file": "experiments/example1.js",
-    "name": "Example 1",
+    "file": "experiments/wwek/molnar2.js",
+    "name": "Example 2 - Molnar variation",
     "description": "Description for example 1"
+  },
+  {
+    "file": "experiments/week2/perlinflow.js",
+    "name": "Perlin Flow Field",
+    "description": "A visual experiment to create perlin noise paticles following vector flows"
   },
   {
     "file": "experiments/example2.js",
@@ -18,10 +23,5 @@
     "file": "experiments/week2/example3.js",
     "name": "Example 3",
     "description": "Description for example 1"
-  },
-  {
-    "file": "experiments/week2/perlinflow.js",
-    "name": "Perlin Flow Field",
-    "description": "A visual experiment to create perlin noise paticles following vector flows"
   }
 ]
