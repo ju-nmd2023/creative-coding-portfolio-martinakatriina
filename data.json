@@ -15,12 +15,12 @@
     "description": "Description for example 1"
   },
   {
-    "file": "experiments/example3.js",
+    "file": "experiments/week2/example3.js",
     "name": "Example 3",
     "description": "Description for example 1"
   },
   {
-    "file": "experiments/perlin.html",
+    "file": "experiments/week2/perlin.html",
     "jsFiles": [
       "experiments/perlin-particle.js",
       "experiments/perlin-flow-field.js"
