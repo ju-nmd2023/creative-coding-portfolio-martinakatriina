@@ -20,7 +20,7 @@
     "description": "Description for example 1"
   },
   {
-    "file": "experiments/week2/perlin-flow.js",
+    "file": "experiments/week2/perlinflow.js",
     "name": "Perlin Flow Field",
     "description": "A visual experiment to create perlin noise paticles following vector flows"
   }
