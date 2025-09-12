@@ -12,7 +12,7 @@ let t = 0;
 let t2 = 500;
 
 function draw() {
-  background(30, 80, 90);
+  background(10, 20, 30);
   drawFirstLayer();
   drawSecondLayer();
 
@@ -23,10 +23,10 @@ function draw() {
 function drawFirstLayer() {
   for (let y = 0; y < numRows; y++) {
     for (let x = 0; x < numCols; x++) {
-      let angle = noise(x / divider, y / divider, t) * TWO_PI * 1.5;
+      let angle = noise(x / divider, y / divider, t) * TWO_PI * 1.2;
       let dx = cos(angle) * size * 0.5;
       let dy = sin(angle) * size * 0.5;
-      fill(30, 100, 200, 160);
+      fill(30, 20, 20, 80);
       ellipse(x * size + dx, y * size + dy, size * 0.8);
     }
   }
@@ -36,10 +36,10 @@ function drawFirstLayer() {
 function drawSecondLayer() {
   for (let y = 0; y < numRows; y++) {
     for (let x = 0; x < numCols; x++) {
-      let angle = noise(x / divider, y / divider, t2) * TWO_PI * 1.5;
+      let angle = noise(x / divider, y / divider, t2) * TWO_PI * 1.2;
       let dx = cos(angle) * size * 0.5;
       let dy = sin(angle) * size * 0.5;
-      fill(0, 180, 255, 120);
+      fill(0, 220, 255, 190);
       ellipse(x * size + dx, y * size + dy, size * 0.8);
     }
   }
