@@ -100,7 +100,6 @@ function draw() {
       v.setMag(1);
       flowfield[index] = v;
       xoff += inc;
-      stroke(0, 50);
       // push();
       // translate(x * scl, y * scl);
       // rotate(v.heading());

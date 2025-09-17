@@ -4,8 +4,8 @@ function setup() {
 
 const size = 10;
 const divider = 10;
-const numRows = 80;
-const numCols = 80;
+const numRows = 200;
+const numCols = 200;
 
 let counter = 100;
 function draw() {

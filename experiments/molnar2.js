@@ -51,8 +51,8 @@ function draw() {
   background(220, 2);
   noFill();
 
-  for (let y = 0; y < 10; y++) {
-    for (x = 0; x < 10; x++) {
+  for (let y = 0; y < 200; y++) {
+    for (x = 0; x < 200; x++) {
       push();
       drawLayers(
         size / 2 + x * (size + gap),

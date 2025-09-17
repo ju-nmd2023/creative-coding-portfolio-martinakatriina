@@ -2,12 +2,13 @@ function setup() {
   createCanvas(innerWidth, innerHeight);
   noStroke();
   frameRate(30);
+  numRows = Math.floor(height / size);
+  numCols = Math.floor(width / size);
 }
-
+let numRows, numCols;
 const size = 4;
 const divider = 12;
-const numRows = 100;
-const numCols = 100;
+
 let t = 0;
 let t2 = 500;
 

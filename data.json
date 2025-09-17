@@ -20,8 +20,18 @@
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
   {
+    "file": "experiments/noise2.js",
+    "name": "Water simulation",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
     "file": "experiments/perlinflow.js",
     "name": "Perlin Flow Field",
+    "description": "A visual experiment to create perlin noise paticles following vector flows"
+  },
+  {
+    "file": "experiments/perlinflow-Re.js",
+    "name": "Perlin Flow Field Recreation",
     "description": "A visual experiment to create perlin noise paticles following vector flows"
   }
 ]

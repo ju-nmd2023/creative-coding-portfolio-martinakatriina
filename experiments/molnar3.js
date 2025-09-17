@@ -4,8 +4,8 @@ function setup() {
   createCanvas(innerWidth, innerHeight);
   frameRate(30);
 
-  for (let y = 0; y < 10; y++) {
-    for (let x = 0; x < 10; x++) {
+  for (let y = 0; y < 150; y++) {
+    for (let x = 0; x < 150; x++) {
       squares.push(
         new Square(
           x * (startingSize + gap) + startingSize / 2,

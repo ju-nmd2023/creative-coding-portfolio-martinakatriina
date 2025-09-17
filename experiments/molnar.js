@@ -44,8 +44,8 @@ function drawLayers(x, y, size) {
 function draw() {
   background(255);
 
-  for (let y = 0; y < 20; y++) {
-    for (x = 0; x < 20; x++) {
+  for (let y = 0; y < 200; y++) {
+    for (x = 0; x < 200; x++) {
       drawLayers(size / 2 + x * size, size / 2 + y * size, size);
     }
   }
