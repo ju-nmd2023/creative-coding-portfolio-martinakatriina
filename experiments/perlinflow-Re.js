@@ -30,7 +30,7 @@ function Particle() {
   };
 
   this.show = function () {
-    stroke(0, 5);
+    stroke(90, 83, 54, 20);
     strokeWeight(1);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     //point(this.pos.x, this.pos.y);
@@ -83,10 +83,10 @@ function setup() {
 
   flowfield = new Array(cols * rows);
 
-  for (var i = 0; i < 1000; i++) {
+  for (var i = 0; i < 2000; i++) {
     particles[i] = new Particle();
   }
-  background(255);
+  background(57, 31, 34);
 }
 
 function draw() {
