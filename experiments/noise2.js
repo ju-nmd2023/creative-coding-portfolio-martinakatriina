@@ -6,28 +6,28 @@ function setup() {
   numCols = Math.floor(width / size);
 }
 let numRows, numCols;
-const size = 4;
-const divider = 12;
+const size = 6.5;
+const divider = 10;
 
-let t = 0;
-let t2 = 500;
+let t = 0.005;
+let t2 = 0.0015;
 
 function draw() {
-  background(10, 20, 30);
+  background(10, 20, 30, 60);
   drawFirstLayer();
   drawSecondLayer();
 
-  t += 0.002;
-  t2 += 0.04;
+  t += 0.01;
+  t2 += 0.03;
 }
 
 function drawFirstLayer() {
   for (let y = 0; y < numRows; y++) {
     for (let x = 0; x < numCols; x++) {
-      let angle = noise(x / divider, y / divider, t) * TWO_PI * 1.2;
+      let angle = noise(x / divider, y / divider, t) * TWO_PI * 0.5;
       let dx = cos(angle) * size * 0.5;
       let dy = sin(angle) * size * 0.5;
-      fill(30, 20, 20, 80);
+      fill(10, 40, 120, 100);
       ellipse(x * size + dx, y * size + dy, size * 0.8);
     }
   }
@@ -40,7 +40,7 @@ function drawSecondLayer() {
       let angle = noise(x / divider, y / divider, t2) * TWO_PI * 1.2;
       let dx = cos(angle) * size * 0.5;
       let dy = sin(angle) * size * 0.5;
-      fill(0, 220, 255, 190);
+      fill(0, 200, 255, 180);
       ellipse(x * size + dx, y * size + dy, size * 0.8);
     }
   }

@@ -1,13 +1,14 @@
 function setup() {
   createCanvas(innerWidth, innerHeight);
+  numRows = Math.floor(height / size);
+  numCols = Math.floor(width / size);
   noStroke();
-  frameRate(30);
+  frameRate(100);
 }
 
-const size = 5;
+const size = 8;
 const divider = 10;
-const numRows = 100;
-const numCols = 100;
+
 let t = 0;
 let t1 = 500;
 
@@ -16,8 +17,8 @@ function draw() {
   drawFirstLayer();
   drawSecondLayer();
 
-  t += 0.002;
-  t1 += 0.05;
+  t += 0.03;
+  t1 += 0.09;
 }
 
 function drawFirstLayer() {
@@ -37,7 +38,7 @@ function drawFirstLayer() {
       ellipse(x * size + dx, y * size + dy, size * 0.7);
 
       // let n = noise(x / divider, y / divider, t * 2);
-      // let c = lerpColor(color(200, 50, 50, 150), color(50, 50, 200, 150), n);
+      // let c = lerpColor(color(200, 50, 50, 150), co lor(50, 50, 200, 150), n);
       // fill(c);
       //ellipse(x * size + dx, y * size + dy, size * 0.7);
     }

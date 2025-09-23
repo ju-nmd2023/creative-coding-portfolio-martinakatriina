@@ -1,27 +1,37 @@
 [
   {
     "file": "experiments/molnar.js",
-    "name": "Example 1 - Molnar recreation",
+    "name": "Molnar recreation",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
   {
     "file": "experiments/molnar2.js",
-    "name": "Example 2 - Molnar variation 1",
+    "name": "Molnar variation 1",
     "description": "Description for example 1"
   },
   {
     "file": "experiments/molnar3.js",
-    "name": "Example 2 - Molnar variation number 2",
+    "name": "Molnar variation N2",
     "description": "Description for example 1"
   },
   {
     "file": "experiments/noise.js",
-    "name": "Example 2 - Noise",
+    "name": "Noise",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
   {
     "file": "experiments/noise2.js",
     "name": "Water simulation",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/noise3.js",
+    "name": "Moving Gradient",
+    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+  },
+  {
+    "file": "experiments/noise3copy.js",
+    "name": "Moving Gradient",
     "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
   },
   {

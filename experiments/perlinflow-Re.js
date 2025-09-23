@@ -30,7 +30,7 @@ function Particle() {
   };
 
   this.show = function () {
-    stroke(90, 83, 54, 20);
+    stroke(77, 52, 73, 20);
     strokeWeight(1);
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
     //point(this.pos.x, this.pos.y);
@@ -86,7 +86,7 @@ function setup() {
   for (var i = 0; i < 2000; i++) {
     particles[i] = new Particle();
   }
-  background(57, 31, 34);
+  background(255, 240, 210);
 }
 
 function draw() {

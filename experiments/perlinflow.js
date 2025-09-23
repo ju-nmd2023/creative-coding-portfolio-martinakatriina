@@ -1,7 +1,5 @@
 // Code by Daniel Shiffman,  https://thecodingtrain.com/CodingChallenges/024-perlinnoiseflowfield.html
 
-// Code by Daniel Shiffman,  https://thecodingtrain.com/CodingChallenges/024-perlinnoiseflowfield.html
-
 function Particle() {
   this.pos = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
