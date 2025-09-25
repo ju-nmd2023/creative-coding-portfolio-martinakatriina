@@ -6,8 +6,8 @@ function setup() {
   frameRate(100);
 }
 
-const size = 8;
-const divider = 10;
+const size = 10;
+const divider = 20;
 
 let t = 0;
 let t1 = 500;

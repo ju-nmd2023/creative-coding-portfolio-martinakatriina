@@ -2,6 +2,31 @@
 
 // Code by Daniel Shiffman,  https://thecodingtrain.com/CodingChallenges/024-perlinnoiseflowfield.html
 
+let inc = 0.1;
+let scl = 10;
+let cols, rows;
+
+let zoff = 0;
+let fr;
+
+let particles = [];
+let flowfield = [];
+
+function setup() {
+  createCanvas(innerWidth, innerHeight);
+  colorMode(HSB, 360, 100, 100, 1);
+  background(255, 20, 200);
+
+  cols = floor(width / scl);
+  rows = floor(height / scl);
+
+  flowfield = new Array(cols * rows);
+
+  for (var i = 0; i < 5000; i++) {
+    particles[i] = new Particle();
+  }
+}
+
 function Particle() {
   this.pos = createVector(random(width), random(height));
   this.vel = createVector(0, 0);
@@ -30,10 +55,11 @@ function Particle() {
   };
 
   this.show = function () {
-    stroke(77, 52, 73, 20);
-    strokeWeight(1);
+    let hue = map(this.pos.x, 0, width, 0, 360);
+    let alpha = map(this.vel.mag(), 0, this.maxspeed, 50, 200);
+    stroke(0, 20, 40);
+    strokeWeight(map(this.vel.mag(), 0, this.maxspeed, 0.5, 2));
     line(this.pos.x, this.pos.y, this.prevPos.x, this.prevPos.y);
-    //point(this.pos.x, this.pos.y);
     this.updatePrev();
   };
 
@@ -65,37 +91,16 @@ function Particle() {
 
 // main sketch
 
-var inc = 0.1;
-var scl = 10;
-var cols, rows;
-
-var zoff = 0;
-var fr;
-
-var particles = [];
-
-var flowfield = [];
-
-function setup() {
-  createCanvas(innerWidth, innerHeight);
-  cols = floor(width / scl);
-  rows = floor(height / scl);
-
-  flowfield = new Array(cols * rows);
-
-  for (var i = 0; i < 2000; i++) {
-    particles[i] = new Particle();
-  }
-  background(255, 240, 210);
-}
-
 function draw() {
+  noStroke();
+  fill(255, 20, 95, 0.05);
+  rect(0, 0, width, height);
   var yoff = 0;
   for (var y = 0; y < rows; y++) {
     var xoff = 0;
     for (var x = 0; x < cols; x++) {
       var index = x + y * cols;
-      var angle = noise(xoff, yoff, zoff) * TWO_PI * 5;
+      var angle = noise(xoff, yoff, zoff) * TWO_PI * 8;
       var v = p5.Vector.fromAngle(angle);
       v.setMag(1);
       flowfield[index] = v;
@@ -120,7 +125,6 @@ function draw() {
     particles[i].follow(flowfield);
     particles[i].update();
     particles[i].edges();
-
     particles[i].show();
   }
 }
