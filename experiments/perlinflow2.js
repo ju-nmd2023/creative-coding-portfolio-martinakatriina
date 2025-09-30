@@ -4,9 +4,16 @@ function Particle() {
   this.position = createVector(random(width), random(height));
   this.velocity = createVector(0, 0);
   this.acceleration = createVector(0, 0);
-
+  this.color = random([
+    color(40, 60, 70, 30),
+    color(125, 123, 62, 30),
+    color(215, 202, 145, 30),
+    color(207, 220, 140, 30),
+    color(181, 200, 197, 30),
+    color(237, 191, 228, 30),
+  ]);
   //changed speed to random
-  this.maxSpeed = random(2, 4);
+  this.maxSpeed = random(2, 3);
 
   this.previousPosition = this.position.copy();
 
@@ -30,7 +37,12 @@ function Particle() {
   };
 
   this.show = function () {
-    stroke(0, 5);
+    stroke(
+      this.color.levels[0],
+      this.color.levels[1],
+      this.color.levels[2],
+      10
+    );
     strokeWeight(1);
     line(
       this.position.x,
@@ -88,7 +100,7 @@ function setup() {
   for (var i = 0; i < 1000; i++) {
     particles[i] = new Particle();
   }
-  background(255);
+  background(5, 8, 1);
 }
 
 function draw() {
@@ -99,14 +111,12 @@ function draw() {
       let index = x + y * cols;
       let angle = noise(xOffset, yOffset, zOffset) * TWO_PI * 5;
       let v = p5.Vector.fromAngle(angle);
-
-      //changed flow field magnitude
-      v.setMag(2);
+      v.setMag(1);
       flowFieldVectors[index] = v;
       xOffset += inc;
       stroke(0, 50);
     }
-    yOffset += 0.05;
+    yOffset += inc;
     zOffset += 0.0003;
   }
 

@@ -40,7 +40,12 @@
     "description": "A visual experiment to create perlin noise paticles following vector flows"
   },
   {
-    "file": "experiments/perlinflow-Re.js",
+    "file": "experiments/perlinflow2.js",
+    "name": "Perlin Flow Field Recreation",
+    "description": "A visual experiment to create perlin noise paticles following vector flows"
+  },
+  {
+    "file": "experiments/perlinflow3.js",
     "name": "Perlin Flow Field Recreation",
     "description": "A visual experiment to create perlin noise paticles following vector flows"
   }
