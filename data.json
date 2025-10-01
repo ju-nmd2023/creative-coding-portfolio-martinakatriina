@@ -1,52 +1,54 @@
 [
   {
     "file": "experiments/molnar.js",
-    "name": "Molnar recreation",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Recreation of Molnar's (Des) Ordres",
+    "description": "A recreation of one of Molnar's pioneer algorithmic art, (Des) Ordres (1974), portraying the balance between chaos and structure, and implementing randomness in everything from the stroke to the square's angles to achieve that."
   },
   {
     "file": "experiments/molnar2.js",
-    "name": "Molnar variation 1",
-    "description": "Description for example 1"
+    "name": "Variation of (Des) Ordres",
+    "description": "This recreation achieves a more visually engaging result by implementing randomness in color, and adding depth by drawing layers on top of each other. "
   },
   {
     "file": "experiments/molnar3.js",
-    "name": "Molnar variation N2",
-    "description": "Description for example 1"
+    "name": "Second variation of (Des) Ordres",
+    "description": "This second variation takes it a step further by adopting motion and a pulsating effect, aiming for a more dynamic feel while keeping coherence throguh the use of a specific color palette."
   },
   {
     "file": "experiments/noise.js",
     "name": "Noise",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "description": "An interpretation of perlin noise aiming to create depth in a pattern using simple nested for loops"
   },
   {
     "file": "experiments/noise2.js",
-    "name": "Water simulation",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Ocean simulation",
+    "description": "I tried combining code with nature to recreate earths landscapes, in this case recreating the ocean by drawing two layers of grids and playing with their opacity to create depth and resonant motion. "
   },
-  {
-    "file": "experiments/noise3.js",
-    "name": "Moving Gradient",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
-  },
+
   {
     "file": "experiments/noise3copy.js",
-    "name": "Moving Gradient",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview."
+    "name": "Flow Gradient",
+    "description": "This experiment is a layered flowing grid of many colorful ellipses, it simulates liquid or abstract patterns."
   },
   {
     "file": "experiments/perlinflow.js",
     "name": "Perlin Flow Field",
-    "description": "A visual experiment to create perlin noise paticles following vector flows"
+    "description": "This generative artwork is inspired by Daniel Shiffman, it simulates thousands of particles that flow through the field and, again are driven by perlin noise. Each particle follows a vector creating continuous and smooth evolution of paths. I wanted to try to simulate the drawing of a pencil on a blank canvas."
   },
   {
     "file": "experiments/perlinflow2.js",
-    "name": "Perlin Flow Field Recreation",
-    "description": "A visual experiment to create perlin noise paticles following vector flows"
+    "name": "Colored Flow Field ",
+    "description": "While this piece follows a very similar structure to the previous Flow Field, this one differs in randomized motion, layered trajectories, and evolution of color, aiming to simulate natural movements found in earths landscapes."
   },
   {
     "file": "experiments/perlinflow3.js",
-    "name": "Perlin Flow Field Recreation",
-    "description": "A visual experiment to create perlin noise paticles following vector flows"
+    "name": "Triangle Flow Field ",
+    "description": "This experiment lets triangles flow along the field, shifting through different hues creating a visually pleasing motion."
+  },
+
+  {
+    "file": "experiments/Tone.js",
+    "name": "Sound Circles",
+    "description": "A playful experiment combining sound and visuals illustrating bubbles for each note played."
   }
 ]

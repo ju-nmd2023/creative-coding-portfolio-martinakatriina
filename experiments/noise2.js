@@ -45,12 +45,3 @@ function drawSecondLayer() {
     }
   }
 }
-//     for (let x = 0; x < numCols; x++) {
-//       ellipse(x * size, y * size, size);
-//       fill(200, 40, 10);
-//       const value = noise(x / divider, y / divider) * size;
-//       ellipse(size / 2 + x * size, size / 2 + y * size, value);
-//     }
-//   }
-//   counter += 0.1;
-// }

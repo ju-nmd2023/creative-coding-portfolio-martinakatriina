@@ -80,8 +80,6 @@ function Particle() {
   };
 }
 
-// main sketch
-
 let inc = 0.1;
 let flowScale = 10;
 let cols, rows;

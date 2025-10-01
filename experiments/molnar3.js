@@ -29,12 +29,8 @@ const Palette = [
   [43, 12, 26],
   [0, 54, 49],
   [153, 38, 43],
-  [202, 237, 184],
+  //[202, 237, 184],
 ];
-//const size = 60;
-// let minSize = 40;
-// let maxSize = 120;
-// let growing = true;
 
 function getRandomValue(pos, variance) {
   return pos + random(-variance, variance);
@@ -82,9 +78,6 @@ class Square {
 
       strokeWeight(random(0.5, 3));
 
-      //  rectMode(CENTER);
-      // rect(x - half, y - half, s, s);
-
       beginShape();
       vertex(
         getRandomValue(this.x - half, variance),
@@ -107,7 +100,7 @@ class Square {
   }
 }
 function draw() {
-  background(249, 198, 98);
+  background(205, 222, 203);
   for (let s1 of squares) {
     s1.update();
     s1.display();
